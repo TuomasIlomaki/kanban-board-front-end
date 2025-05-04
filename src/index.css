@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  height:  100vh;
+  background: linear-gradient(#2A00B7, #42006C);
+  font-family: "Red Hat Display", sans-serif;
+  /* background-color: #10101A; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.kanban-board {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  width: auto;
+  background: #151520;
+  padding: 100px;
+  border-radius: 40px;
+}
+
+.kanban-card {
+  height: auto;
+  width: 300px;
+  background-color: #20202A;
+  border-radius: 30px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #42006C;
+}
+
+.kanban-card-header {
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: #10101A;
+  border-radius: 20px 20px 0 0;
+}
+
+.kanban-card-item {
+  color: whitesmoke;
+  background: #30303A;
+  height: 50px;
+  width: auto;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
