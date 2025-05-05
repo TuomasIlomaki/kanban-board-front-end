@@ -23,35 +23,65 @@ body {
   flex-direction: row;
   align-items: start;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   width: auto;
   background: #151520;
-  padding: 100px;
-  border-radius: 40px;
+  background: transparent;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.add-column-btn {
+  color: whitesmoke;
+  background-color: #20202A;
+  height: 60px;
+  width: 250px;
+  min-width: 250px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 10px;
 }
 
 .kanban-card {
+  color: whitesmoke;
+  background-color: #202030;
+  width: 250px;
   height: auto;
-  width: 300px;
-  background-color: #20202A;
-  border-radius: 30px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: #42006C;
+  min-height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kanban-card-content {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
 }
 
 .kanban-card-header {
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: left;
+  height: 60px;
+  width: 100%;
+  background-color: #151525;
+  border-radius: 10px 10px 0 0;
+}
+
+.kanban-card-header button {
+  height: 50px;
+  width: 50px;
+  background: none;
   color: white;
   font-size: 20px;
-  font-weight: 800;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 100%;
-  background-color: #10101A;
-  border-radius: 20px 20px 0 0;
+  padding: 0;
+  border: none;
 }
 
 .kanban-card-item {
@@ -61,5 +91,5 @@ body {
   width: auto;
   margin: 10px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
